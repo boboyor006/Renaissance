@@ -172,45 +172,31 @@ const Index = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-white">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Ready to Start Your Learning Journey?</h2>
-            <p className="text-white/70 max-w-2xl mx-auto mb-8">
-              Join thousands of students who have already taken the leap into improving their skills and advancing their careers with KnowHub.
-            </p>
-            <Link 
-              to="/courses" 
-              className="btn-hover inline-flex items-center px-8 py-3.5 rounded-full bg-white text-primary font-medium"
-            >
-              Browse All Courses
-              <ArrowRight size={18} className="ml-2" />
-            </Link>
-          </div>
-        </section>
+        
         
         {/* Footer */}
         <footer className="bg-foreground text-white py-12">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
-                <h3 className="text-xl font-bold mb-4">KnowHub</h3>
+                <h3 className="text-xl font-bold mb-4">Renaissance</h3>
                 <p className="text-white/70">
-                  Transforming education through high-quality online courses. Learn from the best instructors in the world.
+                Renaissance O'quv markazini rasmiy web saytiga xush kelibsiz. Bizning saytimizda siz o'zingizga kerakli kursni topishingiz mumkin.
                 </p>
               </div>
               
               <div>
                 <h4 className="text-lg font-bold mb-4">Quick Links</h4>
                 <ul className="space-y-2">
-                  <li><Link to="/" className="text-white/70 hover:text-white transition-colors">Home</Link></li>
-                  <li><Link to="/courses" className="text-white/70 hover:text-white transition-colors">Courses</Link></li>
-                  <li><Link to="/about" className="text-white/70 hover:text-white transition-colors">About Us</Link></li>
-                  <li><Link to="/contact" className="text-white/70 hover:text-white transition-colors">Contact</Link></li>
+                  <li><Link to="/" className="text-white/70 hover:text-white transition-colors">Bosh Sahifa </Link></li>
+                  <li><Link to="/courses" className="text-white/70 hover:text-white transition-colors">Kurslar </Link></li>
+                  <li><Link to="/about" className="text-white/70 hover:text-white transition-colors">Biz haqimizda</Link></li>
+                  <li><Link to="/contact" className="text-white/70 hover:text-white transition-colors">Biz billan bog'lanish </Link></li>
                 </ul>
               </div>
               
               <div>
-                <h4 className="text-lg font-bold mb-4">Categories</h4>
+                <h4 className="text-lg font-bold mb-4">Kategoriyalar</h4>
                 <ul className="space-y-2">
                   {categories.map(category => (
                     <li key={category}>
@@ -225,16 +211,16 @@ const Index = () => {
               <div>
                 <h4 className="text-lg font-bold mb-4">Contact Us</h4>
                 <address className="not-italic text-white/70">
-                  <p>1234 Education Lane</p>
-                  <p>Learning City, LC 12345</p>
-                  <p className="mt-2">info@knowhub.com</p>
-                  <p>(123) 456-7890</p>
+                  <p>Renaissance</p>
+                  <p>Surxondaryo Denov tummani guliston</p>
+                  <p className="mt-2">polatovt033@gmail.com</p>
+                  <p>+998 77-177-28-02</p>
                 </address>
               </div>
             </div>
             
             <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/70">
-              <p>&copy; {new Date().getFullYear()} KnowHub. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Renaissance O'quv markazi</p>
             </div>
           </div>
         </footer>
