@@ -22,28 +22,28 @@ const Hero = () => {
             className="max-w-2xl"
           >
             <span className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
-              Transform Your Skills with Expert-Led Courses
+              Sifatli kurslarini topishingiz mumkin.
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
-              Learn New Skills, <span className="text-primary">Advance</span> Your Career
+             O'z ko'nikmangizni oshring, <span className="text-primary">Renessane</span>  o'quv markazi bilan.
             </h1>
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-              Discover high-quality courses designed by industry experts. From web development to languages, 
-              take the next step in your learning journey.
+            Sanoat mutaxassislari tomonidan ishlab chiqilgan yuqori sifatli kurslarni kashf eting. Veb-ishlab chiqishdan tillargacha,
+            o'rganish sayohatingizda keyingi qadamni qo'ying.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/courses" 
                 className="btn-hover inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-primary text-white font-medium text-lg"
               >
-                Browse Courses
+               Kurslar
                 <ArrowRight size={20} className="ml-2" />
               </Link>
               <Link 
                 to="/about" 
                 className="btn-hover inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white border border-gray-200 text-foreground font-medium text-lg"
               >
-                About Us
+                Biz haqimizda
               </Link>
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
 
-import IMG from "../App.css"
+import Me from "../Img/me.jpg"
 
 export interface Course {
   id: string;
@@ -58,7 +58,7 @@ export const courses: Course[] = [
     featured: true,
     instructor: {
       name: "Po'latov Boboyor",
-      avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+      avatar: Me,
       title: 'Midel Web Developer',
       bio: 'Alex has over 12 years of experience in web development. He has worked with companies like Google and Facebook, and now focuses on teaching the next generation of developers.'
     },
@@ -121,6 +121,8 @@ export const courses: Course[] = [
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: false
           }
+
+          
         ]
       }
     ],

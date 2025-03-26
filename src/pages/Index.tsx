@@ -21,11 +21,11 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <span className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
-                Featured Courses
+                Kurslar billan tanishib chiqish 
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Expand Your Knowledge</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Barcha kurslar </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Discover our most popular courses and start learning today. These courses have helped thousands of students achieve their goals.
+               Renessane O'quv markazining barcha kurslarini ko'rish uchun quyidagi ro'yxatdan foydalaning o'zizga yoqan kurs narxni ko'rib chiqing.
               </p>
             </div>
             

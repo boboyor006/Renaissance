@@ -56,7 +56,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
               </div>
               <div className="flex items-center text-muted-foreground">
                 <Users size={16} className="mr-1.5" />
-                <span>{studentsCount.toLocaleString()} students</span>
+                <span>{studentsCount.toLocaleString()} o'quvchilar</span>
               </div>
             </div>
             
