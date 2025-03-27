@@ -7,7 +7,7 @@ export interface Course {
   description: string;
   longDescription: string;
   category: 'Web Development' | 'Frontend Development' | 'English Language' | 'Arabic Language';
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
+  level: 'Boshlang\'ch' | 'Intermediate' | 'Advanced';
   thumbnail: string;
   price: number;
   duration: string;
@@ -46,27 +46,26 @@ export const courses: Course[] = [
   {
     id: 'web-dev-101',
     title: "Web dastulash boshlang'ich kursi",
-    description: 'Learn web development from scratch with HTML, CSS, JavaScript, Node.js, and more.',
-    longDescription: 'This comprehensive web development bootcamp takes you from beginner to professional developer. You\'ll learn the fundamentals of HTML, CSS, and JavaScript before diving into modern frameworks and tools used in the industry today. By the end of this course, you\'ll have the skills to build complete, responsive websites and web applications.',
+    description: 'Boshlang\'ichdan professional dasturchi bo\'lish uchun bu kursni o\'rganing.',
+    longDescription: 'Bu kurs sizni web dasturlash sohasida boshlang\'ich bilimlarga ega qiladi. Siz HTML, CSS va JavaScript orqali responsiv veb-saytlar yaratishni o\'rganasiz. Kursda React  kabi zamonaviy frameworklar bilan ishlashni o\'rganasiz. To\'liq stack veb ilovalar yaratish, saytlarni ishlab chiqish va boshqarishni o\'rganasiz. Autentifikatsiyani va ma\'lumotlar bazasini saqlashni amalga oshirasiz. Saytlarni performans va SEO uchun optimallashtirishni o\'rganasiz.',
     category: 'Web Development',
-    level: 'Beginner',
+    level: 'Boshlang\'ch',
     thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
-    price: 99.99,
+    price: 30,
     duration: '24 weeks',
     lessons: 120,
-    studentsCount: 12500,
+    studentsCount: 500,
     featured: true,
     instructor: {
       name: "Po'latov Boboyor",
       avatar: Me,
       title: 'Midel Web Developer',
-      bio: 'Alex has over 12 years of experience in web development. He has worked with companies like Google and Facebook, and now focuses on teaching the next generation of developers.'
+      bio: "Po'latov Boboyor"
     },
     whatYouWillLearn: [
-      'Build responsive websites using HTML5, CSS3, and JavaScript',
-      'Work with modern frameworks like React and Node.js',
-      'Create full-stack web applications',
-      'Deploy and manage websites',
+      'Zamonaviy frameworklar bilan ishlash, masalan React va Node.js',
+   
+      'Veb-saytlarni ishlab chiqish va boshqarish',
       'Implement authentication and database storage',
       'Optimize websites for performance and SEO'
     ],
@@ -148,16 +147,16 @@ export const courses: Course[] = [
   },
   {
     id: 'frontend-master',
-    title: 'Frontend Development Masterclass',
-    description: 'Master modern frontend development with React, CSS frameworks, and UI/UX principles.',
+    title: 'Frontend yo\'nalishni.',
+    description: 'Frontend dasturlashni o\'rganish uchun bu kursni tanlang.',
     longDescription: 'Take your frontend skills to the next level with this comprehensive masterclass. You\'ll learn React from the ground up, along with modern CSS frameworks like Tailwind. The course covers responsive design, state management, API integration, and creating beautiful user interfaces. Perfect for developers looking to specialize in frontend development.',
     category: 'Frontend Development',
     level: 'Intermediate',
     thumbnail: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80',
-    price: 89.99,
+    price: 35,
     duration: '16 weeks',
     lessons: 85,
-    studentsCount: 8750,
+    studentsCount: 600,
     featured: true,
     instructor: {
       name: 'Emma Parker',
@@ -354,7 +353,7 @@ export const courses: Course[] = [
     description: 'Start your journey learning Arabic with this comprehensive course for complete beginners.',
     longDescription: 'This Arabic language course is designed specifically for complete beginners. You\'ll start with the Arabic alphabet and basic pronunciation before progressing to simple conversations, greetings, and everyday phrases. The course includes cultural insights to help you understand the context of the language, and plenty of practice exercises to build your confidence.',
     category: 'Arabic Language',
-    level: 'Beginner',
+    level: 'Boshlang\'ch',
     thumbnail: 'https://images.unsplash.com/photo-1560780956-1c0c9d713ade?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
     price: 69.99,
     duration: '10 weeks',
@@ -673,7 +672,7 @@ export const getFeaturedCourses = (limit = 3) => {
 };
 
 export const getCategories = (): Course['category'][] => {
-  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language'];
+  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language', ];
 };
 
 export const getCourseById = (id: string): Course | undefined => {
