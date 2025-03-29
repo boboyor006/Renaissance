@@ -51,7 +51,7 @@ const Index = () => {
                 to="/courses" 
                 className="btn-hover inline-flex items-center px-6 py-3 rounded-full bg-primary text-white font-medium"
               >
-                View All Courses
+                Barcha kurslar
                 <ArrowRight size={18} className="ml-2" />
               </Link>
             </div>
@@ -63,11 +63,11 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <span className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
-                Course Categories
+                Resenssance
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">What Would You Like to Learn?</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Siz yoqtirgn o'z kurslarizni tanlay </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Explore our diverse range of course categories. Each category offers comprehensive learning paths designed to build your expertise.
+               Res
               </p>
             </div>
             
