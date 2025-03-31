@@ -5,7 +5,6 @@ import PageTransition from '@/components/PageTransition';
 import VideoPlayer from '@/components/VideoPlayer';
 import { getCourseById, getRelatedCourses } from '@/data/courses';
 import { Calendar, Clock, BookOpen, Award, DollarSign, Users, ChevronDown, ChevronUp, Play } from 'lucide-react';
-import CourseCard from '@/components/CourseCard';
 import CustomButton from '@/components/ui/custom-button';
 
 const CourseDetail = () => {

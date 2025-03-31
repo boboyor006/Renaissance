@@ -67,7 +67,7 @@ const Index = () => {
               </span>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Siz yoqtirgn o'z kurslarizni tanlay </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-               Res
+               {/* Renessance  */}
               </p>
             </div>
             
@@ -98,12 +98,11 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
-                  Why Choose KnowHub
+                  Nima uchun Renessance 
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">A Learning Experience Designed for Success</h2>
+                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Muvaffaqiyat uchun mo'ljallangan o'quv tajribasi.</h2>
                 <p className="text-foreground/70 mb-8">
-                  We've created a learning platform that puts your success first. Our courses are designed by industry experts and constantly updated to ensure you're learning the most relevant skills.
-                </p>
+                Sizning muvaffaqiyatingizni birinchi o'ringa qo'yadigan o'quv platformasini yaratdik. Bizning kurslarimiz soha mutaxassislari tomonidan ishlab chiqilgan va siz eng kerakli ko'nikmalarni o'rganishingizni ta'minlash uchun doimiy ravishda yangilanadi.                </p>
                 
                 <div className="space-y-6">
                   <div className="flex">
@@ -113,8 +112,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold mb-1">Expert Instructors</h3>
-                      <p className="text-foreground/70">Learn from industry professionals with real-world experience.</p>
+                      <h3 className="text-lg font-bold mb-1">Mutaxassis murabbiylar</h3>
+                      <p className="text-foreground/70">Haqiqiy tajribaga ega bo'lgan soha mutaxassislaridan o'rganing.</p>
                     </div>
                   </div>
                   
@@ -125,8 +124,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold mb-1">Flexible Learning</h3>
-                      <p className="text-foreground/70">Study at your own pace with lifetime access to course content.</p>
+                      <h3 className="text-lg font-bold mb-1">Moslashuvchan ta'lim</h3>
+                      <p className="text-foreground/70">Kurs mazmuniga umr bo'yi kirish imkoniyati bilan o'z tezligingizda o'qing.</p>
                     </div>
                   </div>
                   
@@ -137,8 +136,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold mb-1">Practical Projects</h3>
-                      <p className="text-foreground/70">Apply your knowledge with hands-on projects and exercises.</p>
+                      <h3 className="text-lg font-bold mb-1">Amaliy loyihalar</h3>
+                      <p className="text-foreground/70">O'z bilimlaringizni amaliy loyihalar va mashqlar bilan qo'llang.</p>
                     </div>
                   </div>
                 </div>
@@ -161,8 +160,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-foreground/70">Average completion time</p>
-                      <p className="text-xl font-bold">6 weeks</p>
+                      <p className="text-sm font-medium text-foreground/70">Bizning darslarimiz </p>
+                      <p className="text-xl font-bold">2 Soat</p>
                     </div>
                   </div>
                 </div>
@@ -237,7 +236,7 @@ const getIconForCategory = (category: string) => {
       return <Code size={28} className="text-primary" />;
     case 'English Language':
       return <Globe size={28} className="text-primary" />;
-    case 'Arabic Language':
+    case 'Arabic Tili':
       return <Globe size={28} className="text-primary" />;
     default:
       return <BookOpen size={28} className="text-primary" />;
@@ -247,13 +246,13 @@ const getIconForCategory = (category: string) => {
 const getCategoryDescription = (category: string) => {
   switch (category) {
     case 'Web Development':
-      return 'Build responsive websites and web applications with modern tools and frameworks.';
+      return 'Zamonaviy vositalar va ramkalar bilan sezgir veb-saytlar va veb-ilovalarni yarating.';
     case 'Frontend Development':
-      return 'Create beautiful user interfaces with React, CSS frameworks, and UI/UX principles.';
+      return 'React, CSS ramkalari va UI/UX tamoyillari bilan chiroyli foydalanuvchi interfeyslarini yarating.';
     case 'English Language':
-      return 'Improve your English language skills for professional and personal growth.';
+      return 'Professional va shaxsiy o\'sish uchun ingliz tili ko\'nikmalaringizni yaxshilang.';
     case 'Arabic Language':
-      return 'Learn Arabic from beginner to advanced levels with native-speaking instructors.';
+      return 'Ona tilida so\'zlashuvchi o\'qituvchilar bilan arab tilini boshlang\'ichdan yuqori darajagacha o\'rganing.';
     default:
       return 'Explore courses in this category to expand your knowledge and skills.';
   }
