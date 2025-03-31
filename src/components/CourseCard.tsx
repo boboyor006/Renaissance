@@ -66,11 +66,14 @@ const CourseCard: React.FC<CourseCardProps> = ({
                 <span className="text-xl">${price}</span>
               </div>
               <button className="btn-hover px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
-                View Details
+                Ko'rish
               </button>
             </div>
           </div>
         </div>
+
+
+        
       </Link>
     </motion.div>
   );

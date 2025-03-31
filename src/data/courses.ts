@@ -6,7 +6,7 @@ export interface Course {
   title: string;
   description: string;
   longDescription: string;
-  category: 'Web Development' | 'Frontend Development' | 'English Language' | 'Arabic Language';
+  category: 'Web Development' | 'Frontend Development' | 'English Language' | 'Arabic Language' | 'Rus tili';
   level: 'Boshlang\'ch' | 'Intermediate' | 'Advanced';
   thumbnail: string;
   price: number;
@@ -126,25 +126,12 @@ export const courses: Course[] = [
       }
     ],
     reviews: [
-      {
-        id: 'rev1',
-        user: 'Sarah M.',
-        avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
-        rating: 5,
-        date: '2023-10-15',
-        comment: 'This course completely changed my career path. The content is well-structured and Alex is an amazing instructor who explains complex concepts in simple terms.'
-      },
-      {
-        id: 'rev2',
-        user: 'James K.',
-        avatar: 'https://randomuser.me/api/portraits/men/41.jpg',
-        rating: 4,
-        date: '2023-09-22',
-        comment: 'Great course overall. I would have liked a bit more depth on some of the advanced topics, but it gave me a solid foundation to build upon.'
-      }
+     
     ],
     createdAt: '2023-01-15'
   },
+
+  
   {
     id: 'frontend-master',
     title: 'Frontend yo\'nalishni.',
@@ -672,7 +659,7 @@ export const getFeaturedCourses = (limit = 3) => {
 };
 
 export const getCategories = (): Course['category'][] => {
-  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language', ];
+  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language', 'Rus tili' ];
 };
 
 export const getCourseById = (id: string): Course | undefined => {

@@ -134,7 +134,7 @@ const CourseDetail = () => {
               <div className="lg:col-span-2">
                 {/* About This Course */}
                 <div className="mb-12">
-                  <h2 className="text-2xl font-bold mb-6">About This Course</h2>
+                  <h2 className="text-2xl font-bold mb-6">Ushbu Kurs haqida</h2>
                   <p className="text-foreground/70 mb-6 leading-relaxed">
                     {course.longDescription}
                   </p>
@@ -142,7 +142,7 @@ const CourseDetail = () => {
                 
                 {/* What You'll Learn */}
                 <div className="mb-12 glass-card rounded-2xl p-8">
-                  <h2 className="text-2xl font-bold mb-6">What You'll Learn</h2>
+                  <h2 className="text-2xl font-bold mb-6">Nimani o'rganasiz</h2>
                   <div className="grid md:grid-cols-2 gap-4">
                     {course.whatYouWillLearn.map((item, index) => (
                       <div key={index} className="flex">
@@ -167,7 +167,7 @@ const CourseDetail = () => {
                 
                 {/* Course Curriculum */}
                 <div className="mb-12">
-                  <h2 className="text-2xl font-bold mb-6">Course Curriculum</h2>
+                  <h2 className="text-2xl font-bold mb-6">Kurs dasturi</h2>
                   <div className="space-y-4">
                     {course.curriculum.map((section, sectionIndex) => (
                       <div key={sectionIndex} className="border border-border rounded-xl overflow-hidden">
@@ -176,7 +176,7 @@ const CourseDetail = () => {
                           onClick={() => toggleSection(section.title)}
                         >
                           <div className="flex items-center">
-                            <span className="mr-2 font-medium">Section {sectionIndex + 1}:</span>
+                            <span className="mr-2 font-medium">Darslar{sectionIndex + 1}:</span>
                             <span className="font-bold">{section.title}</span>
                           </div>
                           {expandedSections.includes(section.title) ? (
