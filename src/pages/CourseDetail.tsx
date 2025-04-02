@@ -224,7 +224,7 @@ const CourseDetail = () => {
                 
                 {/* Requirements */}
                 <div className="mb-12">
-                  <h2 className="text-2xl font-bold mb-6">Requirements</h2>
+                  <h2 className="text-2xl font-bold mb-6">Talablar:</h2>
                   <ul className="list-disc pl-5 space-y-2 text-foreground/70">
                     {course.requirements.map((req, index) => (
                       <li key={index}>{req}</li>

@@ -54,12 +54,12 @@ export const courses: Course[] = [
     price: 30,
     duration: '24 weeks',
     lessons: 120,
-    studentsCount: 223,
+    studentsCount:123,
     featured: true,
     instructor: {
       name: "Po'latov Boboyor",
       avatar: Me,
-      title: 'Midel Web Developer',
+      title: 'Midel Fron-Tend developer',
       bio: "Po'latov Boboyor"
     },
     whatYouWillLearn: [
@@ -136,34 +136,33 @@ export const courses: Course[] = [
     id: 'frontend-master',
     title: 'Frontend yo\'nalishni.',
     description: 'Frontend dasturlashni o\'rganish uchun bu kursni tanlang.',
-    longDescription: 'Take your frontend skills to the next level with this comprehensive masterclass. You\'ll learn React from the ground up, along with modern CSS frameworks like Tailwind. The course covers responsive design, state management, API integration, and creating beautiful user interfaces. Perfect for developers looking to specialize in frontend development.',
+    longDescription: 'Frontend ko\'nikmalaringizni yangi bosqichga olib chiqing ushbu to\'liq master-klass bilan. Siz React\'ni noldan o‘rganasiz, shuningdek, Tailwind kabi zamonaviy CSS frameworklaridan foydalanishni bilib olasiz. Kursda responsiv dizayn, holatni boshqarish (state management), API integratsiyasi va chiroyli foydalanuvchi interfeyslarini yaratish kabi mavzular qamrab olingan. Frontend rivojlanishiga ixtisoslashmoqchi bo‘lgan dasturchilar uchun ideal tanlov!',
     category: 'Frontend Development',
     level: 'Intermediate',
     thumbnail: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80',
     price: 35,
-    duration: '25 weeks',
+    duration: '2 soat',
     lessons: 85,
-    studentsCount: 385,
+    studentsCount: 205,
     featured: true,
     instructor: {
-      name: 'Emma Parker',
-      avatar: 'https://randomuser.me/api/portraits/women/65.jpg',
-      title: 'UI Engineer',
-      bio: 'Emma specializes in frontend development and UI/UX design. She has worked at several startups and major tech companies, helping them create elegant, user-friendly interfaces.'
+      name: 'Po\'latov Boboyor',
+      avatar: Me,
+      title: 'Midel Fron-Tend developer',
+      bio: ''
     },
     whatYouWillLearn: [
-      'Build modern reactive user interfaces with React',
-      'Style applications using CSS frameworks like Tailwind',
-      'Implement responsive designs for all device sizes',
-      'Manage application state effectively',
-      'Integrate with backend APIs',
-      'Optimize frontend performance'
+      'React yordamida zamonaviy reaktiv foydalanuvchi interfeyslarini yarating',
+      'Tailwind kabi CSS frameworklari bilan ilovalarni bezang',
+      'Barcha qurilmalar uchun responsiv dizaynni amalga oshiring',
+      'Ilova holatini samarali boshqaring',
+      'Backend API\'lar bilan integratsiya qiling',
+      'Frontend ishlash samaradorligini optimallashtiring'
     ],
     requirements: [
-      'Basic knowledge of HTML, CSS, and JavaScript',
-      'Familiarity with web development concepts',
-      'A modern computer with Node.js installed',
-      'Understanding of basic programming principles'
+      'HTML, CSS va JavaScript bo‘yicha asosiy bilimlarga ega bo‘lish',
+      'Veb-dasturlash konsepsiyalari bilan tanish bo‘lish',
+      'Dasturlashning asosiy tamoyillarini tushunish'
     ],
     curriculum: [
       {
@@ -214,23 +213,12 @@ export const courses: Course[] = [
       }
     ],
     reviews: [
-      {
-        id: 'rev3',
-        user: 'Michael T.',
-        avatar: 'https://randomuser.me/api/portraits/men/22.jpg',
-        rating: 5,
-        date: '2023-10-05',
-        comment: 'Emma is an exceptional teacher. Her approach to frontend development opened my eyes to better practices and more efficient workflows.'
-      },
-      {
-        id: 'rev4',
-        user: 'Lisa R.',
-        avatar: 'https://randomuser.me/api/portraits/women/28.jpg',
-        rating: 5,
-        date: '2023-09-15',
-        comment: 'I\'ve taken several React courses before, but this one truly stands out. The projects are practical and the explanations are crystal clear.'
-      }
+
+        // commentrayiya 
+
+
     ],
+
     createdAt: '2023-02-22'
   },
   {
@@ -659,7 +647,8 @@ export const getFeaturedCourses = (limit = 3) => {
 };
 
 export const getCategories = (): Course['category'][] => {
-  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language', 'Rus tili' ];
+  return ['Web Development', 'Frontend Development', 'English Language', 'Arabic Language'];
+  
 };
 
 export const getCourseById = (id: string): Course | undefined => {
