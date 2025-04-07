@@ -1,5 +1,7 @@
 
 import Me from "../Img/me.jpg"
+import Arabic from "../Img/arabic.jpg"
+import Koreys from "../Img/koreys.jpg"
 
 export interface Course {
   id: string;
@@ -45,13 +47,13 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 'web-dev-101',
-    title: "Web dastulash boshlang'ich kursi",
-    description: 'Boshlang\'ichdan professional dasturchi bo\'lish uchun bu kursni o\'rganing.',
+    title: "Kompyuter savodxonligi",
+    description: 'Boshlang\'ichdan ta\'limda  kompyuter savodxonligi  o\'rganing.',
     longDescription: 'Bu kurs sizni web dasturlash sohasida boshlang\'ich bilimlarga ega qiladi. Siz HTML, CSS va JavaScript orqali responsiv veb-saytlar yaratishni o\'rganasiz. Kursda React  kabi zamonaviy frameworklar bilan ishlashni o\'rganasiz. To\'liq stack veb ilovalar yaratish, saytlarni ishlab chiqish va boshqarishni o\'rganasiz. Autentifikatsiyani va ma\'lumotlar bazasini saqlashni amalga oshirasiz. Saytlarni performans va SEO uchun optimallashtirishni o\'rganasiz.',
     category: 'Web Development',
     level: 'Boshlang\'ch',
     thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
-    price: 30,
+    price: 20,
     duration: '24 weeks',
     lessons: 120,
     studentsCount:123,
@@ -132,6 +134,8 @@ export const courses: Course[] = [
   },
 
   
+
+  
   {
     id: 'frontend-master',
     title: 'Frontend yo\'nalishni.',
@@ -140,8 +144,8 @@ export const courses: Course[] = [
     category: 'Frontend Development',
     level: 'Intermediate',
     thumbnail: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80',
-    price: 35,
-    duration: '2 soat',
+    price: 27.05,
+    duration: '8-oy',
     lessons: 85,
     studentsCount: 205,
     featured: true,
@@ -219,7 +223,7 @@ export const courses: Course[] = [
 
     ],
 
-    createdAt: '2023-02-22'
+    createdAt: '2025'
   },
   {
     id: 'english-business',
@@ -229,7 +233,7 @@ export const courses: Course[] = [
     category: 'English Language',
     level: 'Intermediate',
     thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-    price: 30,
+    price:27.05,
     duration: '24 weeks',
     lessons: 60,
     studentsCount: 500,
@@ -329,7 +333,7 @@ export const courses: Course[] = [
     longDescription: 'This Arabic language course is designed specifically for complete beginners. You\'ll start with the Arabic alphabet and basic pronunciation before progressing to simple conversations, greetings, and everyday phrases. The course includes cultural insights to help you understand the context of the language, and plenty of practice exercises to build your confidence.',
     category: 'Arabic Language',
     level: 'Boshlang\'ch',
-    thumbnail: 'https://images.unsplash.com/photo-1560780956-1c0c9d713ade?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+    thumbnail: Arabic,
     price: 69.99,
     duration: '10 weeks',
     lessons: 50,
@@ -423,6 +427,97 @@ export const courses: Course[] = [
     ],
     createdAt: '2023-04-05'
   },
+
+
+  {
+    id: 'web-dev-101',
+    title: "Koreys tili",
+    description: 'Boshlang\'ichdan ta\'limda  kompyuter savodxonligi  o\'rganing.',
+    longDescription: 'Bu kurs sizni web dasturlash sohasida boshlang\'ich bilimlarga ega qiladi. Siz HTML, CSS va JavaScript orqali responsiv veb-saytlar yaratishni o\'rganasiz. Kursda React  kabi zamonaviy frameworklar bilan ishlashni o\'rganasiz. To\'liq stack veb ilovalar yaratish, saytlarni ishlab chiqish va boshqarishni o\'rganasiz. Autentifikatsiyani va ma\'lumotlar bazasini saqlashni amalga oshirasiz. Saytlarni performans va SEO uchun optimallashtirishni o\'rganasiz.',
+    category: 'Web Development',
+    level: 'Boshlang\'ch',
+    thumbnail: Koreys,
+    price: 20,
+    duration: '24 weeks',
+    lessons: 120,
+    studentsCount:123,
+    featured: true,
+    instructor: {
+      name: "Po'latov Boboyor",
+      avatar: Me,
+      title: 'Midel Fron-Tend developer',
+      bio: "Po'latov Boboyor"
+    },
+    whatYouWillLearn: [
+      'Zamonaviy frameworklar bilan ishlash, masalan React va Node.js',
+   
+      'Veb-saytlarni ishlab chiqish va boshqarish',
+      'Implement authentication and database storage',
+      'Optimize websites for performance and SEO'
+    ],
+    requirements: [
+      'A computer with internet access',
+      'No prior programming experience needed',
+      'Basic computer skills',
+      'Eagerness to learn and solve problems'
+    ],
+    curriculum: [
+      {
+        title: 'Introduction to Web Development',
+        lessons: [
+          {
+            title: 'What is Web Development?',
+            duration: '15 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: true
+          },
+          {
+            title: 'Setting Up Your Development Environment',
+            duration: '25 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: false
+          },
+          {
+            title: 'Web Development Roadmap',
+            duration: '20 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: false
+          }
+        ]
+      },
+      {
+        title: 'HTML Fundamentals',
+        lessons: [
+          {
+            title: 'HTML Document Structure',
+            duration: '18 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: true
+          },
+          {
+            title: 'Working with Text Elements',
+            duration: '22 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: false
+          },
+          {
+            title: 'Links, Images and Media',
+            duration: '28 min',
+            videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+            preview: false
+          }
+
+          
+        ]
+      }
+    ],
+    reviews: [
+     
+    ],
+    createdAt: '2023-01-15'
+  },
+
+
   {
     id: 'english-fluency',
     title: 'English Fluency: Conversation & Pronunciation',

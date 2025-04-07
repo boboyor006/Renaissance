@@ -295,30 +295,30 @@ const CourseDetail = () => {
               <div className="lg:col-span-1">
                 <div className="sticky top-28">
                   <div className="glass-card rounded-2xl p-6 mb-6">
-                    <h3 className="text-xl font-bold mb-4">Course Information</h3>
+                    <h3 className="text-xl font-bold mb-4">Kurs haqida ma'lumot:</h3>
                     <div className="space-y-4">
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Price:</span>
+                        <span className="text-foreground/70">Narx:</span>
                         <span className="font-bold">${course.price.toFixed(2)}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Duration:</span>
+                        <span className="text-foreground/70">Davomiyligi: </span>
                         <span>{course.duration}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Lessons:</span>
+                        <span className="text-foreground/70">Darslar:</span>
                         <span>{course.lessons}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Level:</span>
+                        <span className="text-foreground/70">Daraja:</span>
                         <span>{course.level}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Students:</span>
+                        <span className="text-foreground/70">O'quvchilar:</span>
                         <span>{course.studentsCount.toLocaleString()}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-foreground/70">Created:</span>
+                        <span className="text-foreground/70">Yaratilgan: :</span>
                         <span>{course.createdAt}</span>
                       </div>
                     </div>
