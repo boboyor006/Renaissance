@@ -102,7 +102,7 @@ const CourseDetail = () => {
                     size="lg"
                     fullWidth
                   >
-                    Enroll Now for ${course.price.toFixed(2)}
+                    Uzs {course.price.toFixed(2)}
                   </CustomButton>
                   
                   <CustomButton 

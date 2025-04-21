@@ -11,7 +11,7 @@ export interface Course {
   category: 'Web Development' | 'Frontend Development' | 'English Language' | 'Arabic Language' | 'Rus tili';
   level: 'Boshlang\'ch' | 'Intermediate' | 'Advanced';
   thumbnail: string;
-  price: number;
+  price: string | number;
   duration: string;
   lessons: number;
   studentsCount: number;
@@ -133,98 +133,99 @@ export const courses: Course[] = [
     createdAt: '2023-01-15'
   },
 
-  
 
-  
   {
-    id: 'frontend-master',
-    title: 'Frontend yo\'nalishni.',
-    description: 'Frontend dasturlashni o\'rganish uchun bu kursni tanlang.',
-    longDescription: 'Frontend ko\'nikmalaringizni yangi bosqichga olib chiqing ushbu to\'liq master-klass bilan. Siz React\'ni noldan o‘rganasiz, shuningdek, Tailwind kabi zamonaviy CSS frameworklaridan foydalanishni bilib olasiz. Kursda responsiv dizayn, holatni boshqarish (state management), API integratsiyasi va chiroyli foydalanuvchi interfeyslarini yaratish kabi mavzular qamrab olingan. Frontend rivojlanishiga ixtisoslashmoqchi bo‘lgan dasturchilar uchun ideal tanlov!',
-    category: 'Frontend Development',
-    level: 'Intermediate',
-    thumbnail: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80',
-    price: 27.05,
-    duration: '8-oy',
-    lessons: 85,
-    studentsCount: 205,
+    id: 'web-dev-101',
+    title: "Fron-Tend kurslari",
+    description: 'Boshlang\'ichdan ta\'limda  kompyuter savodxonligi  o\'rganing.',
+    longDescription: 'Bu kurs sizni web dasturlash sohasida boshlang\'ich bilimlarga ega qiladi. Siz HTML, CSS va JavaScript orqali responsiv veb-saytlar yaratishni o\'rganasiz. Kursda React  kabi zamonaviy frameworklar bilan ishlashni o\'rganasiz. To\'liq stack veb ilovalar yaratish, saytlarni ishlab chiqish va boshqarishni o\'rganasiz. Autentifikatsiyani va ma\'lumotlar bazasini saqlashni amalga oshirasiz. Saytlarni performans va SEO uchun optimallashtirishni o\'rganasiz.',
+    category: 'Web Development',
+    level: 'Boshlang\'ch',
+    thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
+    price: 20,
+    duration: '24 weeks',
+    lessons: 120,
+    studentsCount:123,
     featured: true,
     instructor: {
-      name: 'Po\'latov Boboyor',
+      name: "Po'latov Boboyor",
       avatar: Me,
       title: 'Midel Fron-Tend developer',
-      bio: ''
+      bio: "Po'latov Boboyor"
     },
     whatYouWillLearn: [
-      'React yordamida zamonaviy reaktiv foydalanuvchi interfeyslarini yarating',
-      'Tailwind kabi CSS frameworklari bilan ilovalarni bezang',
-      'Barcha qurilmalar uchun responsiv dizaynni amalga oshiring',
-      'Ilova holatini samarali boshqaring',
-      'Backend API\'lar bilan integratsiya qiling',
-      'Frontend ishlash samaradorligini optimallashtiring'
+      'Zamonaviy frameworklar bilan ishlash, masalan React va Node.js',
+   
+      'Veb-saytlarni ishlab chiqish va boshqarish',
+      'Implement authentication and database storage',
+      'Optimize websites for performance and SEO'
     ],
     requirements: [
-      'HTML, CSS va JavaScript bo‘yicha asosiy bilimlarga ega bo‘lish',
-      'Veb-dasturlash konsepsiyalari bilan tanish bo‘lish',
-      'Dasturlashning asosiy tamoyillarini tushunish'
+      'A computer with internet access',
+      'No prior programming experience needed',
+      'Basic computer skills',
+      'Eagerness to learn and solve problems'
     ],
     curriculum: [
       {
-        title: 'React Fundamentals',
+        title: 'Introduction to Web Development',
         lessons: [
           {
-            title: 'Introduction to React',
-            duration: '22 min',
+            title: 'What is Web Development?',
+            duration: '15 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: true
           },
           {
-            title: 'Components and Props',
-            duration: '28 min',
+            title: 'Setting Up Your Development Environment',
+            duration: '25 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: false
           },
           {
-            title: 'State and Lifecycle',
-            duration: '32 min',
+            title: 'Web Development Roadmap',
+            duration: '20 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: false
           }
         ]
       },
       {
-        title: 'Modern CSS Approaches',
+        title: 'HTML Fundamentals',
         lessons: [
           {
-            title: 'Introduction to Tailwind CSS',
-            duration: '25 min',
+            title: 'HTML Document Structure',
+            duration: '18 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: true
           },
           {
-            title: 'Responsive Design with Tailwind',
-            duration: '30 min',
+            title: 'Working with Text Elements',
+            duration: '22 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: false
           },
           {
-            title: 'Creating Custom Components',
-            duration: '35 min',
+            title: 'Links, Images and Media',
+            duration: '28 min',
             videoUrl: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
             preview: false
           }
+
+          
         ]
       }
     ],
     reviews: [
-
-        // commentrayiya 
-
-
+     
     ],
-
-    createdAt: '2025'
+    createdAt: '2023-01-15'
   },
+
+
+  
+
+
   {
     id: 'english-business',
     title: 'Ingliz tilini kurslari',
@@ -282,6 +283,9 @@ export const courses: Course[] = [
           }
         ]
       },
+
+
+      
       {
         title: 'Presentation Skills',
         lessons: [

@@ -63,7 +63,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
             <div className="flex items-center justify-between mt-2">
               <div className="flex items-center text-primary font-bold">
                 <DollarSign size={18} className="mr-1" />
-                <span className="text-xl">${price}</span>
+                <span className="text-xl">{price}</span>
               </div>
               <button className="btn-hover px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm">
                 Ko'rish
